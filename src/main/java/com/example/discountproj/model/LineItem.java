@@ -1,4 +1,4 @@
-package com.example.myapp;
+package com.example.discountproj.model;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
@@ -25,6 +25,10 @@ public class LineItem {
 
     public double getPrice() {
         return price;
+    }
+
+    public double setPrice(double price){
+        return this.price = price;
     }
 
     public int getQuantity() {

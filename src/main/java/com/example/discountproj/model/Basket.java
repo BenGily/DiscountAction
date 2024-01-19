@@ -1,6 +1,5 @@
-package com.example.myapp;
+package com.example.discountproj.model;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
 import java.util.ArrayList;
@@ -9,6 +8,7 @@ import java.util.List;
 @EnableAutoConfiguration
 public class Basket {
     private List<LineItem> items;
+
 
     public Basket() {
         items = new ArrayList<>();
@@ -23,13 +23,6 @@ public class Basket {
     }
 
     public double calculateTotal() {
-        /**
-        double total = 0;
-        for (com.example.myapp.LineItem item : items) {
-            total += item.getTotalPrice();
-        }
-        return total;
-         */
 
         double total = 0;
         for (LineItem item : items) {
